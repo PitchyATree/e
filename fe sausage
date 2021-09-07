@@ -1,0 +1,41 @@
+-- Hats cost(0/Free) || these are the hats for the same FE as in the video- 
+-- Next video, will give hats to other FE in this hathub
+ 
+-- https://www.roblox.com/catalog/4246228452/International-Fedora-Spain
+-- https://www.roblox.com/catalog/3992084515/International-Fedora-Vietnam
+-- https://www.roblox.com/catalog/451220849/Lavender-Updo
+-- https://www.roblox.com/catalog/62724852/Chestnut-Bun
+-- https://www.roblox.com/catalog/63690008/Pal-Hair
+ 
+-- key
+-- R -> try itself
+-- T -> try itself
+ 
+ 
+ 
+ 
+ 
+--this script to make your hats turn into blocks
+local hairAccessoriesWithoutHairInName = {
+['RedBeanieWithHair'] = true;
+['VarietyShades10'] = true;
+}
+ 
+    for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+    if v:IsA("Accessory","LongStraightHair") and not hairAccessoriesWithoutHairInName[v.Name] and v.Handle:FindFirstChild("Mesh") then
+    ag = v.Handle:FindFirstChild("Mesh")
+    ag:Destroy()
+    end
+    end
+ 
+     for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+    if v:IsA("Accessory","LongStraightHair") and not hairAccessoriesWithoutHairInName[v.Name] and v.Handle:FindFirstChild("SpecialMesh") then
+    ag = v.Handle:FindFirstChild("SpecialMesh")
+    ag:Destroy()
+    end
+    end
+ 
+ 
+ 
+ 
+loadstring(game:HttpGet("https://paste.ee/r/bf5oO", true))()
