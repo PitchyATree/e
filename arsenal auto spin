@@ -1,0 +1,160 @@
+--pitchhub script :)
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local OhMyGodPitchHubSoCool = Instance.new("Frame")
+local On = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Off = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+OhMyGodPitchHubSoCool.Name = "OhMyGodPitchHubSoCool"
+OhMyGodPitchHubSoCool.Parent = ScreenGui
+OhMyGodPitchHubSoCool.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+OhMyGodPitchHubSoCool.Position = UDim2.new(0.598788798, 0, 0.130801722, 0)
+OhMyGodPitchHubSoCool.Size = UDim2.new(0, 425, 0, 524)
+OhMyGodPitchHubSoCool.Visible = false
+
+On.Name = "On"
+On.Parent = OhMyGodPitchHubSoCool
+On.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+On.Position = UDim2.new(0.0705882385, 0, 0.612595439, 0)
+On.Size = UDim2.new(0, 155, 0, 59)
+On.Font = Enum.Font.SourceSans
+On.Text = "On"
+On.TextColor3 = Color3.fromRGB(0, 0, 0)
+On.TextScaled = true
+On.TextSize = 14.000
+On.TextWrapped = true
+On.MouseButton1Click:connect(function()
+	getgenv().spinbypitchhubforsummer2021 = true
+
+	while wait(5) do
+		if getgenv().spinbypitchhubforsummer2021 == true then
+			local Event = game:GetService("ReplicatedStorage").Events.SCP
+			Event:FireServer()
+		end 
+	end
+end)
+
+UICorner.CornerRadius = UDim.new(1, 8)
+UICorner.Parent = On
+
+Off.Name = "Off"
+Off.Parent = OhMyGodPitchHubSoCool
+Off.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Off.Position = UDim2.new(0.564705908, 0, 0.610687077, 0)
+Off.Size = UDim2.new(0, 155, 0, 59)
+Off.Font = Enum.Font.SourceSans
+Off.Text = "Off"
+Off.TextColor3 = Color3.fromRGB(0, 0, 0)
+Off.TextScaled = true
+Off.TextSize = 14.000
+Off.TextWrapped = true
+Off.MouseButton1Click:connect(function()
+	getgenv().spinbypitchhubforsummer2021 = false
+end)
+
+UICorner_2.CornerRadius = UDim.new(1, 8)
+UICorner_2.Parent = Off
+
+UICorner_3.CornerRadius = UDim.new(0.150000006, 8)
+UICorner_3.Parent = OhMyGodPitchHubSoCool
+
+TextLabel.Parent = OhMyGodPitchHubSoCool
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Position = UDim2.new(0, 0, 0.101145037, 0)
+TextLabel.Size = UDim2.new(0, 425, 0, 59)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Arsenal - PitchHub"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = OhMyGodPitchHubSoCool
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.Position = UDim2.new(0, 0, 0.213740453, 0)
+TextLabel_2.Size = UDim2.new(0, 425, 0, 35)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Auto Spin summer 2021"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = OhMyGodPitchHubSoCool
+Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Close.Position = UDim2.new(0.788235307, 0, 0.00572519097, 0)
+Close.Size = UDim2.new(0, 50, 0, 50)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(1, 8)
+UICorner_4.Parent = Close
+
+TextButton.Parent = ScreenGui
+TextButton.BackgroundColor3 = Color3.fromRGB(175, 200, 152)
+TextButton.Position = UDim2.new(0, 0, 0.594936728, 0)
+TextButton.Size = UDim2.new(0, 198, 0, 66)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Open "
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+-- Scripts:
+
+local function ADRMAYI_fake_script() -- Close.Script 
+	local script = Instance.new('Script', Close)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		script.Parent.Parent.Visible = false
+	
+	end)
+end
+coroutine.wrap(ADRMAYI_fake_script)()
+local function ZPUVL_fake_script() -- TextButton.Script 
+	local script = Instance.new('Script', TextButton)
+
+	--stop looking at my script pls ;c stole bad !!
+	
+	local frame = script.Parent.Parent.OhMyGodPitchHubSoCool  -- change “Test” to the name of the frane
+	
+	local open = false
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		if frame.Visible == false then
+	
+			frame.Visible = true
+	
+		end
+	
+	end)
+	
+end
+coroutine.wrap(ZPUVL_fake_script)()
