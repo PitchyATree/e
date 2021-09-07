@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HazeWasTaken/Loaf-Group-Rise-Up/main/autoarrest.lua", true))()
