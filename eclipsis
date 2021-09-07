@@ -1,0 +1,158 @@
+-- HELLO THERE!!!
+-- Run the script IN THE GAME, not in the LOBBY (If you were dumb you would do it in the lobby lol)
+-- Not my fault if you get banned (This GUI iwas made on 24 Aug 2019)
+-- This thing that runs first, just so you know it works --
+game.StarterGui:SetCore("ChatMakeSystemMessage", {
+    Text     = "Eclipsis GUI Version 2 Running! Make sure you run it in the game, not in the lobby! ";
+    Color    = Color3.new(0, 185, 0);
+    Font     = Enum.Font.SourceSansBold;
+    FontSize = Enum.FontSize.Size24;
+})
+game.StarterGui:SetCore("ChatMakeSystemMessage", {
+    Text = "Made by Leonard";
+    Color = Color3.new(0, 185, 0);
+    Font = Enum.Font.SourceSansBold;
+    FontSize = Enum.FontSize.Size24;
+})
+ 
+-- Some werid stuff --
+ 
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local titile = Instance.new("TextLabel")
+local infinitejump = Instance.new("TextButton")
+local walkspeed = Instance.new("TextButton")
+local revisadmin = Instance.new("TextButton")
+local btools = Instance.new("TextButton")
+local credit = Instance.new("TextLabel")
+local version = Instance.new("TextLabel")
+--Properties:
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ 
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0.623529, 0.623529, 0.623529)
+Frame.BackgroundTransparency = 0.40000000596046
+Frame.Position = UDim2.new(0.896093726, 0, 0.392070472, 0)
+Frame.Size = UDim2.new(0, 133, 0, 276)
+ 
+titile.Name = "titile"
+titile.Parent = ScreenGui
+titile.BackgroundColor3 = Color3.new(1, 1, 1)
+titile.BackgroundTransparency = 0.64999997615814
+titile.Position = UDim2.new(0.896093726, 0, 0.389867872, 0)
+titile.Size = UDim2.new(0, 133, 0, 35)
+titile.Font = Enum.Font.SciFi
+titile.Text = "Eclipsis GUI"
+titile.TextColor3 = Color3.new(0, 0, 0)
+titile.TextSize = 17
+ 
+infinitejump.Name = "infinitejump"
+infinitejump.Parent = ScreenGui
+infinitejump.Active = false
+infinitejump.BackgroundColor3 = Color3.new(1, 1, 1)
+infinitejump.BackgroundTransparency = 0.80000001192093
+infinitejump.Position = UDim2.new(0.896093726, 0, 0.50000006, 0)
+infinitejump.Size = UDim2.new(0, 133, 0, 50)
+infinitejump.Font = Enum.Font.SourceSans
+infinitejump.Text = "Infinite Jump"
+infinitejump.TextColor3 = Color3.new(0, 0, 0)
+infinitejump.TextSize = 14
+infinitejump.MouseButton1Down:connect(function()
+infinitejump.MouseButton1Down:connect(function()
+local Player = game:GetService'Players'.LocalPlayer;
+local UIS = game:GetService'UserInputService';
+ 
+_G.JumpHeight = 50;
+ 
+function Action(Object, Function) if Object ~= nil then Function(Object); end end
+ 
+UIS.InputBegan:connect(function(UserInput)
+    if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.Space then
+        Action(Player.Character.Humanoid, function(self)
+            if self:GetState() == Enum.HumanoidStateType.Jumping or self:GetState() == Enum.HumanoidStateType.Freefall then
+                Action(self.Parent.HumanoidRootPart, function(self)
+                    self.Velocity = Vector3.new(0, _G.JumpHeight, 0);
+                end)
+            end
+        end)
+    end
+end)
+end)
+ 
+walkspeed.Name = "walkspeed"
+walkspeed.Parent = ScreenGui
+walkspeed.Active = false
+walkspeed.BackgroundColor3 = Color3.new(1, 1, 1)
+walkspeed.BackgroundTransparency = 0.80000001192093
+walkspeed.Position = UDim2.new(0.896093726, 0, 0.610132217, 0)
+walkspeed.Size = UDim2.new(0, 133, 0, 50)
+walkspeed.Font = Enum.Font.SourceSans
+walkspeed.Text = "Walkspeed (70)"
+walkspeed.TextColor3 = Color3.new(0, 0, 0)
+walkspeed.TextSize = 14
+Walkspeed.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Dead, false)
+game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = 70
+end)
+ 
+revisadmin.Name = "revisadmin"
+revisadmin.Parent = ScreenGui
+revisadmin.Active = false
+revisadmin.BackgroundColor3 = Color3.new(1, 1, 1)
+revisadmin.BackgroundTransparency = 0.80000001192093
+revisadmin.Position = UDim2.new(0.896093726, 0, 0.720264375, 0)
+revisadmin.Size = UDim2.new(0, 133, 0, 50)
+revisadmin.Font = Enum.Font.SourceSans
+revisadmin.Text = "Revis Admin"
+revisadmin.TextColor3 = Color3.new(0, 0, 0)
+revisadmin.TextSize = 14
+revisadmin.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Dead, false)
+game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = 70
+end)
+revisadmin.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/T1LmXLET", true))() 
+end)
+ 
+btools.Name = "btools"
+btools.Parent = ScreenGui
+btools.Active = false
+btools.BackgroundColor3 = Color3.new(1, 1, 1)
+btools.BackgroundTransparency = 0.80000001192093
+btools.Position = UDim2.new(0.896093726, 0, 0.830396533, 0)
+btools.Size = UDim2.new(0, 133, 0, 50)
+btools.Font = Enum.Font.SourceSans
+btools.Text = "BTools"
+btools.TextColor3 = Color3.new(0, 0, 0)
+btools.TextSize = 14
+btools.MouseButton1Down:connect(function()
+local a=Instance.new("Tool")a.RequiresHandle=false;a.Name="Delete"local b=game.Players.LocalPlayer;a.Parent=b:WaitForChild("Backpack")local c=b:GetMouse()local d=false;local e=Instance.new("SelectionBox")e.Color3=Color3.new(0,0.6,0.6,6)e.Parent=b.PlayerGui;local c=b:GetMouse()local e=Instance.new("SelectionBox")e.Color3=Color3.new(0,0.6,0.6,6)e.Parent=b.PlayerGui;e.Name="derp"c.Move:connect(function()if d then local f=c.Target;if not f then e.Adornee=nil else if f:IsA("BasePart")then e.Adornee=f else e.Adornee=nil end end end end)a.Equipped:Connect(function()d=true end)a.Unequipped:Connect(function()e.Adornee=nil;d=false end)a.Activated:Connect(function()if e.Adornee then local g=Instance.new("Explosion")g.Parent=game.Workspace;g.Position=e.Adornee.Position;g.BlastPressure=0;local h=Instance.new("Sound")h.SoundId="http://www.roblox.com/asset/?id=315775189"h.Parent=game.Workspace;h:Play()e.Adornee:Destroy()e.Adornee=nil end end) 
+end)
+ 
+ 
+credit.Name = "credit"
+credit.Parent = ScreenGui
+credit.BackgroundColor3 = Color3.new(1, 1, 1)
+credit.BackgroundTransparency = 0.64999997615814
+credit.Position = UDim2.new(0.896093726, 0, 0.940528691, 0)
+credit.Size = UDim2.new(0, 133, 0, 26)
+credit.Font = Enum.Font.SciFi
+credit.Text = "Made by Leonard"
+credit.TextColor3 = Color3.new(0, 0, 0)
+credit.TextSize = 14
+ 
+version.Name = "version"
+version.Parent = ScreenGui
+version.BackgroundColor3 = Color3.new(1, 1, 1)
+version.BackgroundTransparency = 0.20000000298023
+version.Position = UDim2.new(0.896093726, 0, 0.46916306, 0)
+version.Size = UDim2.new(0, 133, 0, 14)
+version.Font = Enum.Font.SciFi
+version.Text = "Version 2"
+version.TextColor3 = Color3.new(0, 0, 0)
+version.TextScaled = true
+version.TextSize = 13
+version.TextStrokeTransparency = 5
+version.TextWrapped = true
+ 
+end)
