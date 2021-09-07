@@ -1,0 +1,2 @@
+_G.animations = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Skribb11es/Random-Releases/main/FunkyFridayAutoPlayer", true))()
