@@ -1,0 +1,1 @@
+loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/ProjectBoring/Head-Resize-v1/main/Head%20Size%20Obfuscated.lua'))()
