@@ -1,0 +1,159 @@
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(23.9967, 2.6185, 200.422)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
+
+wait(2)
+
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(-71.5749, 3.51902, 82.3122)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
+
+wait(2)
+
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(-111.066, 3.30334, 65.9145)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
+
+wait(2)
+
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(-165.668, 2.6185, 1.82778)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
+
+wait(2)
+
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(-179.715, 3.25702, -71.9556)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
+
+wait(2)
+
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(-74.1504, 2.61732, -209.096)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
+
+wait(2)
+
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(86.861, 2.6185, -123.365)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
+
+wait(2)
+
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(137.665, 2.6185, -144.117)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
+
+wait(2)
+
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(137.108, 3.54424, -66.1373)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
+
+wait(2)
+
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(107.798, 3.29183, 47.9875)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
+
+wait(2)
+
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(101.49, 22.7145, -54.3962)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
+
+wait(2)
+
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(-178.821, 37.0151, -185.076)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
+
+wait(2)
+
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(155.791, 41.3638, 167.253)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
+
+wait(2)
+
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(114.163, 31.3108, 171.791)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
+
+wait(2)
+
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(145.636, 16.8748, 50.0491)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
+
+wait(2)
+
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(-87.0412, 55.0707, 35.9916)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
+
+wait(2)
+
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(-17.8577, 18.6465, 140.736)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
+
+wait(2)
+
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(-10.9691, 20.7847, 44.9145)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
