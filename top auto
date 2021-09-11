@@ -59,6 +59,24 @@ humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
 wait(0.1)
 pl.CFrame = location
 
+wait(0)
+
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(86.861, 2.6185, -123.365)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
+
+wait(1)
+
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(86.861, 2.6185, -123.365)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
+
 wait(2)
 
 local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
