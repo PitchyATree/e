@@ -34,6 +34,9 @@ TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
+TextButton.MouseButton1Click:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PitchyATree/e/main/luobu%20launch%20script%201"))()
+end)
 
 UICorner.CornerRadius = UDim.new(0.0500000007, 8)
 UICorner.Parent = TextButton
