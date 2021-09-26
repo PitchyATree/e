@@ -1,5 +1,1 @@
-# e
-other script lul 
-
-
-it's a library of script i've got
+WRD = WeAreDevs = https://wearedevs.net
