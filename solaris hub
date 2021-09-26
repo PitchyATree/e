@@ -1,0 +1,26 @@
+--// mlemix and bye was here \\--
+
+local supportedGames = {
+    [286090429] = "Arsenal",
+    [2788229376] = "Da_Hood",
+    [21532277] = "Notoriety",
+    [142823291] = "Murder_Mystery",
+    [292439477] = "Phantom_Forces",
+    [4520749081] = "Kings_Legacy",
+    [301549746] = "Counter_Blox",
+    [6172932937] = "Energy_Assault",
+    [3527629287] = "Big_Paintball",
+    [3233893879] = "Bad_Business",
+    [606849621] = "Jailbreak",
+    [5041144419] = "SCP_Roleplay",
+    [1511883870] = "Shindo_Life"
+}
+
+local gameName = supportedGames[game.PlaceId] or supportedGames[game.GameId]
+
+if not gameName then
+    return loadstring(game:HttpGet("https://solarishub.dev/games/Universal.lua", true))()
+end
+gameName = string.gsub(gameName,' ','_')
+
+loadstring(game:HttpGet("https://solarishub.dev/games/".. gameName.. ".lua"))()
