@@ -1,0 +1,61 @@
+--[[ script done by Nanito1411 on v3rmillion
+https://v3rmillion.net/member.php?action=profile&uid=1808974
+in the thread
+https://v3rmillion.net/showthread.php?tid=1140513
+]]
+
+local HI = Instance.new("ScreenGui")
+local MAIN = Instance.new("Frame")
+local FRAME = Instance.new("Frame")
+local Rocket = Instance.new("TextButton")
+local Minigun = Instance.new("TextButton")
+HI.Name = "HI"
+HI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+HI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+HI.ResetOnSpawn = false
+MAIN.Name = "MAIN"
+MAIN.Parent = HI
+MAIN.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MAIN.Position = UDim2.new(0.143037975, 0, 0.279773146, 0)
+MAIN.Size = UDim2.new(0, 228, 0, 135)
+MAIN.Style = Enum.FrameStyle.RobloxRound
+MAIN.Active = true
+MAIN.Draggable = true
+FRAME.Name = "FRAME"
+FRAME.Parent = MAIN
+FRAME.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FRAME.Position = UDim2.new(-0.0473586619, 0, -0.0814814791, 0)
+FRAME.Size = UDim2.new(0, 230, 0, 138)
+FRAME.Style = Enum.FrameStyle.RobloxRound
+Rocket.Name = "Rocket"
+Rocket.Parent = MAIN
+Rocket.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+Rocket.Position = UDim2.new(0.198366418, 0, 0.163323015, 0)
+Rocket.Size = UDim2.new(0, 125, 0, 35)
+Rocket.Style = Enum.ButtonStyle.RobloxRoundButton
+Rocket.Font = Enum.Font.SourceSans
+Rocket.Text = "ROCKET"
+Rocket.TextColor3 = Color3.fromRGB(0, 255, 255)
+Rocket.TextSize = 14.000
+Rocket.MouseButton1Click:connect(function()
+	local v1 = "Rocket Launcher"
+	local event = game:GetService("Players").LocalPlayer.PlayerGui.Select.Frame.RemoteEvent
+	event:FireServer(v1)
+	game:GetService("Players").LocalPlayer.PlayerGui.Select:Destroy()
+	end)
+Minigun.Name = "Minigun"
+Minigun.Parent = MAIN
+Minigun.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+Minigun.Position = UDim2.new(0.198366404, 0, 0.553821564, 0)
+Minigun.Size = UDim2.new(0, 125, 0, 35)
+Minigun.Style = Enum.ButtonStyle.RobloxRoundButton
+Minigun.Font = Enum.Font.SourceSans
+Minigun.Text = "MINIGUN"
+Minigun.TextColor3 = Color3.fromRGB(0, 255, 255)
+Minigun.TextSize = 14.000
+Minigun.MouseButton1Click:connect(function()
+	local v1 = "Minigun"
+	local event = game:GetService("Players").LocalPlayer.PlayerGui.Select.Frame.RemoteEvent
+	event:FireServer(v1)
+	game:GetService("Players").LocalPlayer.PlayerGui.Select:Destroy()
+end)
