@@ -1,3 +1,12 @@
+--[[
+script done by Fuu on v3rmillion
+https://v3rmillion.net/member.php?action=profile&uid=1262238
+in the thread
+https://v3rmillion.net/showthread.php?tid=1160318
+
+]]
+
+
 local curcam = workspace.CurrentCamera
 local plots = workspace:WaitForChild("Plots")
 local startergui = game:GetService("StarterGui")
