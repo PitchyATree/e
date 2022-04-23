@@ -1,0 +1,357 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Vryrr", "Ocean")
+local Tab = Window:NewTab("World")
+local Section = Tab:NewSection("Main")
+Section:NewButton("Chat Bypasser", "Bypasses Chat", function()
+loadstring(game:HttpGet("https://the-shed.dev/scripts/sbp.lua", true))()
+end)
+Section:NewButton("Oof Spammer", "Spams Oof Sound", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/JaMbzp0B", true))()
+end)
+Section:NewButton("TP GUI", "Teleport to other players", function()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/DagerFild/b4776075a0d26ef04394133ee6bd2081/raw/0ed51ac94057d2d9a9f00e1b037b9011c76ca54a/tpGUI", true))()
+end)
+Section:NewButton("Grab All Tools", "Pick up all tools", function()
+for _,v in pairs(workspace:GetDescendants()) do
+	if v:IsA("Tool") then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Handle.CFrame
+	end
+end
+end)
+Section:NewButton("Telekinesis", "Control Objects", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/ZCuzD82x", true))()
+end)
+Section:NewButton("Small Settings", "Just Settings", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/AWKUn5Hs", true))()
+end)
+Section:NewButton("Empty Server Finder", "Join Empty Server", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/aASY68Ns", true))()
+end)
+local Section = Tab:NewSection("More")
+Section:NewButton("VR", "Makes it where people can see you in VR", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/uZWAvTxC", true))()
+end)
+Section:NewButton("Easier Obby", "Coming Soon", function()
+print("coming soon")
+end)
+Section:NewButton("OP Hat Gui", "You can create parts with hats you own.", function()
+loadstring(game:HttpGet("https://ssbtools.netlify.app/assets/storage/LOADSTRING_SCRIPT2.txt"))()
+end)
+Section:NewButton("Floating Hats", "Makes all the hats you wear float around you", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/4B4fktPS", true))()
+end)
+Section:NewButton("Giant Hat", "Makes all the hats bigger", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/QsCPxEEC", true))()
+end)
+Section:NewButton("Drop Hats", "Makes all the hats fall", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/QsCPxEEC", true))()
+end)
+local Section = Tab:NewSection("With Chat")
+Section:NewButton("Chat Bypasser", "Bypasses Chat", function()
+loadstring(game:HttpGet("https://the-shed.dev/scripts/sbp.lua", true))()
+end)
+Section:NewButton("Enable Bubble Chat", "Makes you see chat in bubbles", function()
+game.Chat.BubbleChatEnabled = true
+end)
+Section:NewButton("Make Users Chat anything you want", "Gui which can make it look like someone said something in chat", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ant-7802/--/main/straightmilk.lua'))()
+end)
+Section:NewButton(“Message Bot", "Replys and talks to people", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/6gPZMWaU'))()
+end)
+local Tab = Window:NewTab("Player")
+local Section = Tab:NewSection("Basic")
+Section:NewSlider("Walkspeed", "makes your character faster or slower", 1000, 0, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+Section:NewSlider("Jumppower", "Changes the jumppower", 1000, 0, function(v)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
+    end)
+Section:NewSlider("Health", "Changes the health", 1000, 0, function(v)
+        game.Players.LocalPlayer.Character.Humanoid.Health = v
+        end)
+    Section:NewSlider("MaxHealth", "Changes the max health", 1001, 0, function(v)
+        game.Players.LocalPlayer.Character.Humanoid.MaxHealth = v
+    end)
+Section:NewButton("Fly", "Makes you fly", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/JyzmArqx", true))()
+end)
+Section:NewButton("Noclip", "Makes you cant collide", function()
+loadstring(game:HttpGet("https://pastebin.com/DW6ZRWr3", true))()
+end)
+Section:NewButton("God", "Makes you live forever", function()
+loadstring(game:HttpGet("https://pastebin.com/Tb9SA8Zk", true))()
+end)
+Section:NewButton("Invisibility", "Makes you disappear", function()
+loadstring(game:HttpGet("https://pastebin.com/vd82MUBZ", true))()
+end)
+    Section:NewTextBox("Display Name", "Change your name", function(txt)
+game.Players.LocalPlayer.Character.Humanoid.DisplayName = txt
+end)
+      Section:NewButton("Refill Health", "Makes your health 100", function()
+game.Workspace.Player.LocalPlayer.Character.Humanoid.Health = 100
+end)
+Section:NewButton(“Anti-Fling", "Teleport to other players", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/PuAwMhXK",))()
+end)
+Section:NewButton("Death/Reset", "Kills You", function()
+        game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end)
+Section:NewButton("Levitate", "Makes you hover over the ground", function()
+    game.Players.LocalPlayer.Character.Humanoid.HipHeight = 3
+end)
+Section:NewButton("Insta Seat", "Teleports you to a seat", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Seat.CFrame
+end)
+Section:NewToggle("Rotate", "rotate your character", function(state)
+if state then
+game.Players.LocalPlayer.Character.Humanoid.AutoRotate = true
+else
+game.Players.LocalPlayer.Character.Humanoid.AutoRotate = false
+end
+end)
+Section:NewToggle("Stand", "Makes you stand or not stand", function(state)
+if state then
+game.Players.LocalPlayer.Character.Humanoid.PlatformStand = true
+else
+game.Players.LocalPlayer.Character.Humanoid.PlatformStand = false
+end
+end)
+Section:NewButton("Netless Bypass", "Bypasses Netless", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/DUc29mew", true))()
+end)                                                                                                                                                                                                                                                                                                                                                                                       
+local Section = Tab:NewSection("More")
+    Section:NewButton("Spider Man", "Be Spiderman", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/ItsDishan/SpidermanScript/main/Spider-Man'), true))()
+end)
+    Section:NewSlider("HipHeight", "Do weird things", 1000, 0, function(v)
+    game.Players.LocalPlayer.Character.Humanoid.HipHeight = v
+end)
+    Section:NewSlider("HeathDistance", "Changes the distance of the health bar", 1000, 0, function(v)
+        game.Players.LocalPlayer.Character.Humanoid.HeathDisplayedDistance = v
+    end)
+Section:NewButton("Walk On Walls", "Makes you walk on walls", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/5T7KsEWy", true))()
+end)
+Section:NewButton("Visible Name", "Makes everyone see your name", function()
+game.Workspace.Player.LocalPlayer.Character.Humanoid.NameDisplayDistance = 1000000000000000000000000000000000000000000000000
+end)
+Section:NewButton("Visible Health", "Makes everyone see your health", function()
+game.Workspace.Player.LocalPlayer.Character.Humanoid.Health = 99
+game.Players.LocalPlayer.Character.Humanoid.HeathDisplayedDistance = 10000000000000000000000000000000000000000000000000
+end)
+local Tab = Window:NewTab("Avatar")
+local Section = Tab:NewSection("Morphs")
+Section:NewButton("R6", "Turns R15 to R6", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/e2GzxYjD, true))()
+end)
+Section:NewButton("Netless Bypass", "Bypasses Netless", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/DUc29mew", true))()
+end)
+Section:NewButton("Be a Wall", "Be a wall", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/AY6kA2AV", true))()
+end)
+Section:NewButton("Become Chair", "Be a chair", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/uN6c86e1", true))()
+end)
+Section:NewButton("Become Table","Be a chair", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/9kDrHnUd", true))()
+end)
+Section:NewButton("Be a ball", "Be a ball", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/EJskzezp", true))()
+end)
+Section:NewButton("Spider", "Be a spider", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/txsk1LJg", true))()
+end)
+local Section = Tab:NewSection("Limbs")
+Section:NewButton("Long Legs", "Adds Long Legs", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/2vbYR75P", true))()
+end)
+Section:NewButton("Headless", "Lose your head", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/QUDSU8Fk", true))()
+end)
+local Tab = Window:NewTab("Combat")
+local Section = Tab:NewSection("Combat")
+Section:NewButton("FLING GUI", "Flings players", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/r97d7dS0', true))()
+end)
+Section:NewButton("ESP", "Makes it so you can trace down and see others names and boxes", function()  
+      loadstring(game:HttpGet'https://ic3w0lf.xyz/rblx/protoesp.lua')()
+end)
+Section:NewButton("Aimbot", "Aimbot", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-Script/main/Aimbot%20Script.lua", true))()
+end)
+Section:NewButton("TP GUI", "Teleport to other players", function()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/DagerFild/b4776075a0d26ef04394133ee6bd2081/raw/0ed51ac94057d2d9a9f00e1b037b9011c76ca54a/tpGUI", true))()
+end)
+Section:NewButton(“Anti-Fling", "Teleport to other players", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/PuAwMhXK",))()
+end)
+local Tab = Window:NewTab("Animations")
+local Section = Tab:NewSection("Animations")
+Section:NewButton("Netless Bypass", "Bypasses Netless", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/DUc29mew", true))()
+end)
+Section:NewButton("R6 Animations", "R6 Animation", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/qbexdLb3", true))()
+end)
+Section:NewButton("R15 Animations", "R15 Animations", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/x9BkBh0m", true))()
+end)
+Section:NewButton("Take The L", "Epic Animation", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/VkWkuyzc", true))()
+end)
+Section:NewButton("Chill", "Adds this animation", function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/XmHFdTij"))()
+end)
+Section:NewButton("Default Dance", "Easy Dance", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/iXAe7Fub", true))()
+end)
+Section:NewButton("Meme Dances", "Adds this animation", function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/0QfjMKrF"))()
+end)
+Section:NewButton("Better Meme Dances", "Meme Dances", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/FV3HLmTH", true))()
+end)
+Section:NewButton("Retard Dance", "Nice Dance", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/5ddwJ7tP", true))()
+end)
+Section:NewButton("Boogie Down", "Gotta Boogie", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/6DzXfYzy", true))()
+end)
+Section:NewButton(":joy:", "Adds this animation", function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/LEAQuKj0"))()
+end)
+Section:NewButton("Annoy Gui", "Adds this animation", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/1cHdCvTF"))()
+end)
+Section:NewButton("Sonic", "Adds this animation", function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/SyF5t70A"))()
+end)
+Section:NewButton("Xester", "Adds this animation", function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/RPwyPvEi"))()
+end)
+Section:NewButton("Dog", "Adds this animation", function()
+loadstring(game:HttpGetAsync("https://pastebin.com/8fS6iYmJ"))()
+end)
+local Tab = Window:NewTab("Hat Scripts")
+local Section = Tab:NewSection("Main")
+Section:NewButton("Sniper", "Useable Sniper", function()
+loadstring(game:HttpGetAsync("https://pastebin.com/6uyKdbd6"))()
+end)
+Section:NewButton("Minigun", "Useable Minigun", function()
+loadstring(game:HttpGetAsync("https://pastebin.com/kGA4WWSm"))()
+end)
+Section:NewButton("Scp 096","International-Fedora-Peru,International-Fedora-USA,International-Fedora-Brazil,International-Fedora-Philippines,Brown-Hair", function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/WHW6WH3R"))()
+end)
+Section:NewButton("Blue Epic Sword", "Blue Epic Sword", function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/eEaybFj9"))()
+end)
+Section:NewButton("Yellow Epic Sword", "Yellow Epic Sword", function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/gYQtLsE2"))()
+end)
+local Tab = Window:NewTab("Admin")
+local Section = Tab:NewSection("Admin")
+Section:NewButton("Infinity Yield", "Adds admin", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+Section:NewButton("CMD-X", "Adds admin", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+end)
+Section:NewButton("Reviz Admin", "Adds admin", function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/KNUzQPYS'),true))()
+end)
+Section:NewButton("Homebrew Admin", "Adds admin", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/mgamingpro/HomebrewAdmin/master/Main'),true))()
+end)
+Section:NewButton("Fates Admin", "Adds admin", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+end)
+local Tab = Window:NewTab("Hubs")
+local Section = Tab:NewSection("Hubs")
+Section:NewButton("Owl Hub", "Adds this hub", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt'))()
+end)
+Section:NewButton("Dark Hub", "Adds this hub", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
+end)
+Section:NewButton("Solaris", "Adds this hub", function()
+loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
+end)
+Section:NewButton("Domain X (Nice hub)", "Adds this hub", function()
+loadstring(game:HttpGet('https://shlex.dev/release/domainx/latest.lua',true))()
+end)
+Section:NewButton("VG Hub", "Adds this hub", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end)
+local Tab = Window:NewTab("Utility")
+local Section = Tab:NewSection("Users")
+Section:NewButton("Stream Sniper", "Find Streams", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Blissful4992/Miscellaneous/main/StreamSniper.lua"))()
+end)
+local Section = Tab:NewSection("Game")
+Section:NewButton("Antilag", "Makes it not lag", function()
+local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
+local g = game
+local w = g.Workspace
+local l = g.Lighting
+local t = w.Terrain
+t.WaterWaveSize = 0
+t.WaterWaveSpeed = 0
+t.WaterReflectance = 0
+t.WaterTransparency = 0
+l.GlobalShadows = false
+l.FogEnd = 9e9
+l.Brightness = 0
+settings().Rendering.QualityLevel = "Level01"
+for i, v in pairs(g:GetDescendants()) do
+	if v:IsA("Part") or v:IsA("Union") or v:IsA("CornerWedgePart") or v:IsA("TrussPart") then
+		v.Material = "Plastic"
+		v.Reflectance = 0
+	elseif v:IsA("Decal") or v:IsA("Texture") and decalsyeeted then
+		v.Transparency = 1
+	elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+		v.Lifetime = NumberRange.new(0)
+	elseif v:IsA("Explosion") then
+		v.BlastPressure = 1
+		v.BlastRadius = 1
+	elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") then
+		v.Enabled = false
+	elseif v:IsA("MeshPart") then
+		v.Material = "Plastic"
+		v.Reflectance = 0
+		v.TextureID = 10385902758728957
+	end
+end
+for i, e in pairs(l:GetChildren()) do
+	if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
+		e.Enabled = false
+	end
+ end
+end)
+Section:NewButton("TP GUI", "Teleport to other players", function()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/DagerFild/b4776075a0d26ef04394133ee6bd2081/raw/0ed51ac94057d2d9a9f00e1b037b9011c76ca54a/tpGUI", true))()
+end)
+Section:NewButton(“Anti-Fling", "Teleport to other players", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/PuAwMhXK",))()
+end)
+local Section = Tab:NewSection("Reanimation")
+Section:NewButton("Reanimate Script", "Reanimates your character", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/c5VxYv4p"))()
+end)
+Section:NewButton("Netless Bypass", "Bypasses Netless", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/DUc29mew", true))()
+end)
+Section:NewButton("Death/Reset", "Kills You", function()
+        game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end)
+local Section = Tab:NewSection("Development")
+Section:NewButton("Dex Explorer", "Like studio in a game", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/jxZELQUn", true))()
+end)
+Section:NewButton("Remote Spy", "Fe Script Maker", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/7GmZyarT", true))()
+end)
+
+
