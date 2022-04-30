@@ -1,0 +1,141 @@
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
+
+local mbrpg = library:CreateWindow("MeloBlox RPG") -- Creates the window
+
+local af = mbrpg:CreateFolder("AutoFarm") -- Creates the folder(U will put here your buttons,etc)
+
+
+
+local mob
+local level
+local boss
+
+af:Dropdown("Choose Mob",{"Blob","Bloopy","Larva","Logling","Pufflet","Fungi","BullFrog","DevilBlob"},true,function(value) --true/false, replaces the current title "Dropdown" with the option that t
+    mob = value
+    print(value)
+end)
+
+af:Dropdown("Choose Boss",{"BlobKing","Fungi King"},true,function(value) --true/false, replaces the current title "Dropdown" with the option that t
+    boss = value
+    print(value)
+end)
+
+af:Dropdown("Choose Level",{"Lv.1","Lv.3","Lv.4","Lv.5","Lv.6","Lv.7","Lv.8","Lv.9","Lv.10","Lv.11","Lv.12","Lv.13","Lv.14","Lv.15","Lv.16","Lv.17","Lv.18","Lv.19","Lv.20","Lv.21","Lv.22","Lv.23","Lv.24","Lv.25","Lv.26","Lv.27","Lv.28","Lv.29","Lv.30","Lv.31","Lv.32","Lv.33","Lv.34","Lv.35","Lv.36","Lv.37","Lv.38","Lv.39","Lv.40","Lv.41","Lv.42","Lv.43","Lv.44","Lv.45","Lv.46","Lv.47","Lv.48","Lv.49","Lv.50"},true,function(value) --true/false, replaces the current title "Dropdown" with the option that t
+    level = value
+    print(value)
+end)
+
+
+af:Toggle("Start AF Mob",function(bool)
+    shared.toggle = bool
+    if shared.toggle == true then
+      if mob then 
+        if level then
+        repeat
+            wait(.05)
+                for i,v in pairs(game:GetService("Workspace").RunTime:GetDescendants()) do
+                  if v.Name == "CreatureName" and v.Text == mob then
+                    if v.Parent.LvlTxt.Text == level then
+                      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.Parent.Parent.CFrame
+                    end
+                  end 
+                end
+        until shared.toggle == false
+    end end
+  end
+end)
+
+af:Toggle("Start AF Boss",function(bool)
+    shared.toggle = bool
+    if shared.toggle == true then
+      if mob then 
+        if level then
+        repeat
+            wait(.05)
+                for i,v in pairs(game:GetService("Workspace").RunTime:GetDescendants()) do
+                  if v.Name == "CreatureName" and v.Text == boss then
+                    if v.Parent.LvlTxt.Text == level then
+                      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.Parent.Parent.CFrame
+                    end
+                  end 
+                end
+        until shared.toggle == false
+    end end
+  end
+end)
+
+
+af:Toggle("Auto M1",function(bl)
+  ssd = bl
+  while ssd do
+    wait(.4)
+local args = {
+    [1] = "Action1",
+    [2] = "Down"
+}
+
+game:GetService("ReplicatedStorage").Knit.Services.ActionBarService.RE.InputReceived:FireServer(unpack(args))
+wait(.1)
+game:GetService("ReplicatedStorage").Knit.Services.ActionBarService.RE.InputReceived:FireServer(unpack(args))
+end
+end)
+
+af:Toggle("Auto 0",function(fe)
+  ssr = fe
+  while ssr do
+    wait(1)
+
+local args = {
+    [1] = "Action2",
+    [2] = "Down"
+}
+
+game:GetService("ReplicatedStorage").Knit.Services.ActionBarService.RE.InputReceived:FireServer(unpack(args))
+end
+end)
+
+af:Toggle("Auto 1",function(fe)
+  ssr = fe
+  while ssr do
+    wait(1)
+
+local args = {
+    [1] = "Action3",
+    [2] = "Down"
+}
+
+game:GetService("ReplicatedStorage").Knit.Services.ActionBarService.RE.InputReceived:FireServer(unpack(args))
+end
+end)
+
+af:Toggle("Auto 2",function(fe)
+  ssr = fe
+  while ssr do
+    wait(1)
+
+local args = {
+    [1] = "Action4",
+    [2] = "Down"
+}
+
+game:GetService("ReplicatedStorage").Knit.Services.ActionBarService.RE.InputReceived:FireServer(unpack(args))
+end
+end)
+
+af:Toggle("Auto 3",function(fe)
+  ssr = fe
+  while ssr do
+    wait(1)
+
+local args = {
+    [1] = "Action5",
+    [2] = "Down"
+}
+
+game:GetService("ReplicatedStorage").Knit.Services.ActionBarService.RE.InputReceived:FireServer(unpack(args))
+end
+end)
+
+
+
+af:DestroyGui()
