@@ -1,0 +1,325 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local cool = Instance.new("ScreenGui")
+local OpenFrame = Instance.new("Frame")
+local Open = Instance.new("TextButton")
+local Main = Instance.new("Frame")
+local PoliceMan = Instance.new("TextButton")
+local SpecialForce = Instance.new("TextButton")
+local EliteMafia = Instance.new("TextButton")
+local Gangster = Instance.new("TextButton")
+local NewbiePrisoner = Instance.new("TextButton")
+local PrisonGuard = Instance.new("TextButton")
+local Prisoner = Instance.new("TextButton")
+local StrongPrisoner = Instance.new("TextButton")
+local Mafia = Instance.new("TextButton")
+local Game = Instance.new("TextButton")
+local Borda = Instance.new("Frame")
+local Credits = Instance.new("TextLabel")
+local Borda_2 = Instance.new("Frame")
+local ItalyTP = Instance.new("TextButton")
+local GotoPrision = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+
+--Properties:
+
+cool.Name = "cool"
+cool.Parent = game.CoreGui
+cool.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+OpenFrame.Name = "OpenFrame"
+OpenFrame.Parent = cool
+OpenFrame.Active = true
+OpenFrame.BackgroundColor3 = Color3.fromRGB(112, 123, 199)
+OpenFrame.Position = UDim2.new(0.00739176152, 0, 0.512618303, 0)
+OpenFrame.Size = UDim2.new(0, 120, 0, 39)
+
+Open.Name = "Open"
+Open.Parent = OpenFrame
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.BackgroundTransparency = 1.000
+Open.Position = UDim2.new(-0.0916666687, 0, -0.103433333, 0)
+Open.Size = UDim2.new(0, 141, 0, 46)
+Open.Font = Enum.Font.Cartoon
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextSize = 35.000
+Open.TextTransparency = 0.100
+Open.MouseButton1Down:connect(function()
+Main.Visible = true
+OpenFrame.Visible = false
+end)
+
+
+Main.Name = "Main"
+Main.Parent = cool
+Main.Active = true
+Main.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+Main.BorderColor3 = Color3.fromRGB(113, 2, 45)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.162724465, 0, 0.528391123, 0)
+Main.Size = UDim2.new(0, 434, 0, 299)
+Main.Visible = false
+
+PoliceMan.Name = "Police Man"
+PoliceMan.Parent = Main
+PoliceMan.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PoliceMan.BackgroundTransparency = 0.500
+PoliceMan.BorderColor3 = Color3.fromRGB(48, 0, 0)
+PoliceMan.BorderSizePixel = 3
+PoliceMan.Position = UDim2.new(0.0379207991, 0, 0.297267497, 0)
+PoliceMan.Size = UDim2.new(0, 100, 0, 30)
+PoliceMan.Font = Enum.Font.Cartoon
+PoliceMan.Text = "Police Man"
+PoliceMan.TextColor3 = Color3.fromRGB(144, 255, 26)
+PoliceMan.TextSize = 20.000
+PoliceMan.TextStrokeTransparency = 0.000
+PoliceMan.MouseButton1Down:connect(function()
+local oh1 = "Police Man"
+game:GetService("ReplicatedStorage").RS.Quest:FireServer(oh1)
+end)
+
+
+SpecialForce.Name = "Special Force"
+SpecialForce.Parent = Main
+SpecialForce.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SpecialForce.BackgroundTransparency = 0.500
+SpecialForce.BorderColor3 = Color3.fromRGB(48, 0, 0)
+SpecialForce.BorderSizePixel = 3
+SpecialForce.Position = UDim2.new(0.384636402, 0, 0.297267497, 0)
+SpecialForce.Size = UDim2.new(0, 100, 0, 30)
+SpecialForce.Font = Enum.Font.Cartoon
+SpecialForce.Text = "Special Force"
+SpecialForce.TextColor3 = Color3.fromRGB(144, 255, 26)
+SpecialForce.TextSize = 20.000
+SpecialForce.TextStrokeTransparency = 0.000
+SpecialForce.MouseButton1Down:connect(function()
+local oh1 = "Special Force"
+game:GetService("ReplicatedStorage").RS.Quest:FireServer(oh1)
+end)
+
+EliteMafia.Name = "Elite Mafia"
+EliteMafia.Parent = Main
+EliteMafia.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+EliteMafia.BackgroundTransparency = 0.500
+EliteMafia.BorderColor3 = Color3.fromRGB(48, 0, 0)
+EliteMafia.BorderSizePixel = 3
+EliteMafia.Position = UDim2.new(0.0379207879, 0, 0.485815614, 0)
+EliteMafia.Size = UDim2.new(0, 100, 0, 30)
+EliteMafia.Font = Enum.Font.Cartoon
+EliteMafia.Text = "Elite Mafia"
+EliteMafia.TextColor3 = Color3.fromRGB(144, 255, 26)
+EliteMafia.TextSize = 20.000
+EliteMafia.TextStrokeTransparency = 0.000
+EliteMafia.MouseButton1Down:connect(function()
+local oh1 = "Elite Mafia"
+game:GetService("ReplicatedStorage").RS.Quest:FireServer(oh1)
+end)
+
+
+Gangster.Name = "Gangster"
+Gangster.Parent = Main
+Gangster.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Gangster.BackgroundTransparency = 0.500
+Gangster.BorderColor3 = Color3.fromRGB(48, 0, 0)
+Gangster.BorderSizePixel = 3
+Gangster.Position = UDim2.new(0.384636402, 0, 0.485815614, 0)
+Gangster.Size = UDim2.new(0, 100, 0, 30)
+Gangster.Font = Enum.Font.Cartoon
+Gangster.Text = "Gangster"
+Gangster.TextColor3 = Color3.fromRGB(144, 255, 26)
+Gangster.TextSize = 20.000
+Gangster.TextStrokeTransparency = 0.000
+Gangster.MouseButton1Down:connect(function()
+local oh1 = "Gangster"
+game:GetService("ReplicatedStorage").RS.Quest:FireServer(oh1)
+end)
+
+NewbiePrisoner.Name = "Newbie Prisoner"
+NewbiePrisoner.Parent = Main
+NewbiePrisoner.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+NewbiePrisoner.BackgroundTransparency = 0.500
+NewbiePrisoner.BorderColor3 = Color3.fromRGB(48, 0, 0)
+NewbiePrisoner.BorderSizePixel = 3
+NewbiePrisoner.Position = UDim2.new(0.738498807, 0, 0.485815614, 0)
+NewbiePrisoner.Size = UDim2.new(0, 100, 0, 30)
+NewbiePrisoner.Font = Enum.Font.Cartoon
+NewbiePrisoner.Text = "Newbie P."
+NewbiePrisoner.TextColor3 = Color3.fromRGB(144, 255, 26)
+NewbiePrisoner.TextSize = 20.000
+NewbiePrisoner.TextStrokeTransparency = 0.000
+NewbiePrisoner.MouseButton1Down:connect(function()
+local oh1 = "Newbie Prisoner"
+game:GetService("ReplicatedStorage").RS.Quest:FireServer(oh1)
+end)
+
+PrisonGuard.Name = "Prison Guard"
+PrisonGuard.Parent = Main
+PrisonGuard.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PrisonGuard.BackgroundTransparency = 0.500
+PrisonGuard.BorderColor3 = Color3.fromRGB(48, 0, 0)
+PrisonGuard.BorderSizePixel = 3
+PrisonGuard.Position = UDim2.new(0.0379207879, 0, 0.691489339, 0)
+PrisonGuard.Size = UDim2.new(0, 100, 0, 30)
+PrisonGuard.Font = Enum.Font.Cartoon
+PrisonGuard.Text = "Prison G."
+PrisonGuard.TextColor3 = Color3.fromRGB(144, 255, 26)
+PrisonGuard.TextSize = 20.000
+PrisonGuard.TextStrokeTransparency = 0.000
+PrisonGuard.MouseButton1Down:connect(function()
+local oh1 = "Prison Guard"
+game:GetService("ReplicatedStorage").RS.Quest:FireServer(oh1)
+end)
+
+
+Prisoner.Name = "Prisoner"
+Prisoner.Parent = Main
+Prisoner.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Prisoner.BackgroundTransparency = 0.500
+Prisoner.BorderColor3 = Color3.fromRGB(48, 0, 0)
+Prisoner.BorderSizePixel = 3
+Prisoner.Position = UDim2.new(0.384636402, 0, 0.691489339, 0)
+Prisoner.Size = UDim2.new(0, 100, 0, 30)
+Prisoner.Font = Enum.Font.Cartoon
+Prisoner.Text = "Prisoner"
+Prisoner.TextColor3 = Color3.fromRGB(144, 255, 26)
+Prisoner.TextSize = 20.000
+Prisoner.TextStrokeTransparency = 0.000
+Prisoner.MouseButton1Down:connect(function()
+local oh1 = "Prisoner"
+game:GetService("ReplicatedStorage").RS.Quest:FireServer(oh1)
+end)
+
+StrongPrisoner.Name = "Strong Prisoner"
+StrongPrisoner.Parent = Main
+StrongPrisoner.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+StrongPrisoner.BackgroundTransparency = 0.500
+StrongPrisoner.BorderColor3 = Color3.fromRGB(48, 0, 0)
+StrongPrisoner.BorderSizePixel = 3
+StrongPrisoner.Position = UDim2.new(0.738498807, 0, 0.691489458, 0)
+StrongPrisoner.Size = UDim2.new(0, 100, 0, 30)
+StrongPrisoner.Font = Enum.Font.Cartoon
+StrongPrisoner.Text = "Strong P."
+StrongPrisoner.TextColor3 = Color3.fromRGB(144, 255, 26)
+StrongPrisoner.TextSize = 20.000
+StrongPrisoner.MouseButton1Down:connect(function()
+local oh1 = "Strong Prisoner"
+game:GetService("ReplicatedStorage").RS.Quest:FireServer(oh1)
+end)
+
+Mafia.Name = "Mafia"
+Mafia.Parent = Main
+Mafia.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Mafia.BackgroundTransparency = 0.500
+Mafia.BorderColor3 = Color3.fromRGB(48, 0, 0)
+Mafia.BorderSizePixel = 3
+Mafia.Position = UDim2.new(0.738498807, 0, 0.297267497, 0)
+Mafia.Size = UDim2.new(0, 100, 0, 30)
+Mafia.Font = Enum.Font.Cartoon
+Mafia.Text = "Mafia"
+Mafia.TextColor3 = Color3.fromRGB(144, 255, 26)
+Mafia.TextSize = 20.000
+Mafia.MouseButton1Down:connect(function()
+local oh1 = "Mafia"
+game:GetService("ReplicatedStorage").RS.Quest:FireServer(oh1)
+end)
+Game.Name = "Game"
+Game.Parent = Main
+Game.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Game.BackgroundTransparency = 1.000
+Game.BorderColor3 = Color3.fromRGB(48, 0, 0)
+Game.BorderSizePixel = 3
+Game.Position = UDim2.new(0.313207895, 0, 0.0602006689, 0)
+Game.Size = UDim2.new(0, 155, 0, 42)
+Game.Font = Enum.Font.Cartoon
+Game.Text = "Jojo Blox 2"
+Game.TextColor3 = Color3.fromRGB(144, 255, 26)
+Game.TextSize = 30.000
+Game.TextStrokeTransparency = 0.000
+
+Borda.Name = "Borda"
+Borda.Parent = Main
+Borda.BackgroundColor3 = Color3.fromRGB(0, 65, 19)
+Borda.BackgroundTransparency = 0.400
+Borda.BorderSizePixel = 0
+Borda.Position = UDim2.new(0, 0, 0.936454833, 0)
+Borda.Size = UDim2.new(0, 434, 0, 19)
+
+Credits.Name = "Credits"
+Credits.Parent = Main
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(0.262672812, 0, 0.876254201, 0)
+Credits.Size = UDim2.new(0, 200, 0, 50)
+Credits.Font = Enum.Font.Cartoon
+Credits.Text = "Made by kinggf6"
+Credits.TextColor3 = Color3.fromRGB(42, 255, 238)
+Credits.TextSize = 28.000
+Credits.TextWrapped = true
+
+Borda_2.Name = "Borda"
+Borda_2.Parent = Main
+Borda_2.BackgroundColor3 = Color3.fromRGB(0, 65, 19)
+Borda_2.BackgroundTransparency = 0.400
+Borda_2.BorderSizePixel = 0
+Borda_2.Size = UDim2.new(0, 434, 0, 18)
+
+ItalyTP.Name = "Italy TP"
+ItalyTP.Parent = Main
+ItalyTP.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ItalyTP.BackgroundTransparency = 0.500
+ItalyTP.BorderColor3 = Color3.fromRGB(48, 0, 0)
+ItalyTP.BorderSizePixel = 3
+ItalyTP.Position = UDim2.new(0.0367101952, 0, 0.0928271413, 0)
+ItalyTP.Size = UDim2.new(0, 100, 0, 21)
+ItalyTP.Font = Enum.Font.Cartoon
+ItalyTP.Text = "Italy TP"
+ItalyTP.TextColor3 = Color3.fromRGB(144, 255, 26)
+ItalyTP.TextSize = 20.000
+ItalyTP.TextStrokeTransparency = 0.000
+ItalyTP.MouseButton1Down:connect(function()
+placeid = 4313854107  --change this to the place id you want
+tp = game:GetService('TeleportService')
+
+for i,v in pairs (game.Players:GetChildren()) do
+    tp:Teleport(placeid, v)
+end
+end)
+
+GotoPrision.Name = "Goto Prision"
+GotoPrision.Parent = Main
+GotoPrision.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+GotoPrision.BackgroundTransparency = 0.500
+GotoPrision.BorderColor3 = Color3.fromRGB(48, 0, 0)
+GotoPrision.BorderSizePixel = 3
+GotoPrision.Position = UDim2.new(0.737171054, 0, 0.0928271413, 0)
+GotoPrision.Size = UDim2.new(0, 100, 0, 21)
+GotoPrision.Font = Enum.Font.Cartoon
+GotoPrision.Text = "Go to Prision"
+GotoPrision.TextColor3 = Color3.fromRGB(144, 255, 26)
+GotoPrision.TextSize = 20.000
+GotoPrision.TextStrokeTransparency = 0.000
+GotoPrision.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(6572.99414, 682.526917, 1816.30835)
+end)
+
+Close.Name = "Close"
+Close.Parent = Main
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.928571343, 0, -0.00668896269, 0)
+Close.Size = UDim2.new(0, 31, 0, 21)
+Close.Font = Enum.Font.Cartoon
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(124, 0, 2)
+Close.TextScaled = true
+Close.TextSize = 1.000
+Close.TextWrapped = true
+Close.MouseButton1Down:connect(function()
+OpenFrame.Visible = true
+Main.Visible = false
+end)
