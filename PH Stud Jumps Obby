@@ -1,0 +1,22 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/PitchyATree/roblox-exploit-library/main/turtle%20library%20red%20version"))()
+local window = library:Window("PitchHub - SJO")
+window:Button("easy obby", function()     
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PitchyATree/myscript/main/sjo%20obby%201"))()
+end)
+window:Button("medium obby", function()     
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PitchyATree/myscript/main/sjo%20obby%202"))()
+end)
+window:Button("normal obby", function()     
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/PitchyATree/myscript/main/sjo%20obby%203"))()  --6.30000496, 1.60271573, 3.31895161, 1, 0, 0, 0, 1, 0, 0, 0, 1
+end)
+
+window:Button("spawn", function()     
+
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new( 6.30000496, 1.60271573, 3.31895161, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
+
+end)
