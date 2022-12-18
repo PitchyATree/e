@@ -1,0 +1,15 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/PitchyATree/roblox-exploit-library/main/turtle%20library%20red%20version"))()
+local window = library:Window("PitchHub - CandyFarm")
+window:Toggle("barley sugar ", false, function(bool)  -- you can change window to the ui you want the toggle in 
+     getgenv().barley = bool
+     while wait(0.1) do
+         if getgenv().barley == true then
+             local me = game.Players.LocalPlayer.Character.HumanoidRootPart
+for i,v in pairs(game.Workspace.Candy_Bin:GetDescendants()) do
+if v.Name == "Basic" then
+v.CFrame = me.CFrame
+end
+end
+end
+end 
+end)
