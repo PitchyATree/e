@@ -1,0 +1,62 @@
+library = loadstring(game:HttpGet('https://raw.githubusercontent.com/PitchyATree/roblox-exploit-library/refs/heads/main/turtle%20library%20red%20version'))()
+local window = library:Window("you vs homer")
+window:Button("spawn", function()    -- you can change window2 to the ui you want the button in 
+   local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new( 0, 106, -10)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
+end)
+
+window:Button("inf jump", function()    -- you can change window2 to the ui you want the button in 
+   game:GetService("UserInputService").JumpRequest:connect(function()
+        game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")       
+    end)
+end)
+window:Slider("Speed",0,300,20, function(value)
+   game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+end)
+window:Slider("Jump",0,300,20, function(value)
+   game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
+end)
+window:Slider("Gravity",0,196,20, function(value)
+   game.Workspace.Gravity = value
+end)
+window:Button("anti afk", function()    
+   local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+   wait(1)
+   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+end)
+
+window:Toggle("obby part", false, function(bool)
+    getgenv().obby = bool
+
+    if bool then
+        
+        while getgenv().obby do
+            local player = game.Players.LocalPlayer
+            local character = player.Character or player.CharacterAdded:Wait()
+            local hrp = character:WaitForChild("HumanoidRootPart")
+            local humanoid = character:WaitForChild("Humanoid")
+
+            local winpad = workspace.lobbyCage.obby.landawnObby.winpad
+            local location = winpad.CFrame + Vector3.new(0, 3, 0)
+
+            humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+            task.wait(0.1)
+            hrp.CFrame = location
+
+            task.wait(1) 
+        end
+
+    else
+        
+        getgenv().obby = false
+    end
+end)
+
+--0, 106, -10
